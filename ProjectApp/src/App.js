@@ -1,67 +1,45 @@
-import React from 'react';
+import React from "react";
+import { View, Text, Button, Alert } from "react-native";
+// import MeuTexto from "./components/MeuTexto";
+// import MinMax from "./components/MinMax";
+// import Contador from "./components/Contador";
+import Botao from "./components/Botao";
+import Estilo from "./estilo";
+import Display from "./components/display";
 
-import {ImageBackground, StyleSheet, Button, View, SafeAreaView, Text, Alert,} from 'react-native';
 
-const image = {uri: 'https://sm.ign.com/ign_br/news/p/playstatio/playstation-wrap-up-returns-with-your-2020-ps5-and-ps4-gamin_w54u.jpg'};
+export default () => {
+    return(
+        <View style={Estilo.App}>
+            <View style={Estilo.display}>
+                <Display/>
+                
+                
+            </View>
+            
+            <View style={Estilo.botao}>
+                <Botao valor="C" operador/>
+                <Botao valor="()" operador/>
+                <Botao valor="%" operador/>
+                <Botao valor="<<" operador/>
+                <Botao valor="7"/>
+                <Botao valor="8"/>
+                <Botao valor="9"/>
+                <Botao valor="x" operador/>
+                <Botao valor="4"/>
+                <Botao valor="5"/>
+                <Botao valor="6"/>
+                <Botao valor="-" operador/>
+                <Botao valor="1"/>
+                <Botao valor="2"/>
+                <Botao valor="3"/>
+                <Botao valor="+" operador/>
+                <Botao valor="."/>
+                <Botao valor="0"/>
+                <Botao valor="/"/>
+                <Botao valor="=" operador/>
 
-const Separator = () => <View style={styles.separator} />;
-
-const App = () => (
-  <SafeAreaView style={styles.container}>
-    <View style={styles.container}>
-    <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-      
-      <View>
-
-      <Text style={styles.title}>
-        The título e manipulador onPress são obrigatórios. Recomenda-se definir
-        acessibilidadeLabel para ajudar a tornar seu aplicativo utilizável po.
-      </Text>
-
-      <Button
-        title="START"
-        onPress={() => Alert.alert('Botão simples pressionado')}
-      />
-    </View>
-
-    </ImageBackground>
-    
-  </View>
-    
-    <View>
-     
-    </View>
-    
-  </SafeAreaView>
-);
-
-const styles = StyleSheet.create({
-  title: {
-    color: 'black',
-  },
-  image: {
-    flex: 1,
-    justifyContent: 'center',
-    marginHorizontal: -32,
-    marginVertical: 5,
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    marginHorizontal: 16,
-  },
-  title: {
-    color: 'white',
-    textAlign: 'center',
-    marginVertical: 50,
-    fontSize: 20,
-  },
-  
-  separator: {
-    marginVertical: 8,
-    borderBottomColor: '#737373',
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  },
-});
-
-export default App;
+                
+            </View>
+        </View>
+)}

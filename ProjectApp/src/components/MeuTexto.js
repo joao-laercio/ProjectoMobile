@@ -1,14 +1,13 @@
-import React from 'react';
-import { Text, StyleSheet } from 'react-native';
-import Estilo from '../estilo';
+import React from "react";
+import { Text, StyleSheet } from "react-native";
 
 export default () => (
-    <Text styles = {Estilo.MeuTexto}>Meu primeiro componente!</Text>
+    <Text style={style.MeuTexto}>Meu primeiro compomente!</Text>
 )
-    const style = StyleSheet.create({
-        MeuTexto:{
-            fontSize: 36,
-            backgroundColor: "red"
-        }
-    })
-    
+
+const style = StyleSheet.create({
+    MeuTexto:{
+        fontSize: 36,
+        backgroundColor: "red"
+    }
+})

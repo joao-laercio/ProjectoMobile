@@ -1,56 +1,36 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    App:{
-        flex:1,
-        // flexDirection:'row',
-        justifyContent:'space-evenly',
-        alignItems:'baseline',
-        padding:100
-        
-        // flexWrap: 'wrap'
+    App: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: "center",
+        padding: 60
     },
+    
+    display: {
+        flex:3,
+        textAlign: "center",
+        color:'black',
+        paddingLeft:100
 
-    fonteG:{
-        
-        fontSize:50,
-        color:'black'
     },
-    MeuTexto:{
-        fontSize:50,
-        backgroundColor: 'red'
+    botao: {   
+
+        flexGrow:5,
+        flexDirection:'row',
+        flexWrap:'wrap',
+                
     },
-    butao1:{
-        display: 'flex',
-        justifyContent:'baseline',
-        fontSize: 60,
-        color:'black',
-        backgroundColor:'red'
-        
+    botaoOperador: {   
+        color:'red'
+                
     },
-    butao2:{
-       backgroundColor:'red',
-        width:60,
-        height:100
-    },
-    butao3:{
-        fontSize: 60,
-        color:'black',
-        
-    },
-    butao4:{
-        fontSize: 60,
-        color:'black',
-        
-    },
-    butao5:{
-        fontSize: 60,
-        color:'black',
-        
-    },
-    butao6:{
-        fontSize: 60,
-        color:'black',
-        
+    botaoNumeros: {   
+        fontSize:10,
+        borderColorColor:'green',
+       
+                
     }
-    })
+
+})

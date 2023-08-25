@@ -11,9 +11,9 @@ export default props => {
 
     return (
         <>
-            <Text style={Estilo.fontG}>{numero}</Text>
-            <Button title="+" onPress={inc}/>
-            <Button title="-" onPress={dec}/>          
+            <Text style={Estilo.display}>{numero}231+255</Text>
+            <Text style={Estilo.display}>{numero}468</Text>
+                     
         </>
     )
 }
